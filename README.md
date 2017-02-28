@@ -4,7 +4,7 @@ Approach used in this project is same as Anthony Casagrande and can be obtained 
 This project will help you in Scraping https://images.google.com/ . 
 
 #####Image downloading Functionality added
-======
+
 ##Demo
 For Demo of only scraping use the code
 
@@ -30,6 +30,7 @@ For Demo of Downloading images use the code
 ```
 
 ###Other Approach
+======
 This approach will grab small only small size pic
 ```python
 	from bs4 import BeautifulSoup
