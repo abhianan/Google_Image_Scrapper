@@ -30,7 +30,7 @@ For Demo of Downloading images use the code
 ```
 
 ### Other Approach
-======
+
 This approach will grab small only small size pic
 ```python
 	from bs4 import BeautifulSoup
