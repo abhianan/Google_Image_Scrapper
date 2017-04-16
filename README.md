@@ -3,9 +3,9 @@
 Approach used in this project is same as Anthony Casagrande and can be obtained from https://github.com/BirdAPI .
 This project will help you in Scraping https://images.google.com/ . 
 
-#####Image downloading Functionality added
+##### Image downloading Functionality added
 
-##Demo
+## Demo
 For Demo of only scraping use the code
 
 ```python
@@ -29,7 +29,7 @@ For Demo of Downloading images use the code
 	images.fast_download(results, path =s, threads=12)
 ```
 
-###Other Approach
+### Other Approach
 ======
 This approach will grab small only small size pic
 ```python
@@ -38,19 +38,19 @@ This approach will grab small only small size pic
 
 
 	def imget(si):
-			 try:
-					br=mechanize.Browser()
-					br.set_handle_robots(False)
-					br.addheaders=[('User-Agent','Mozilla')]
-					img=br.open("https://www.google.com/search?site=&tbm=isch&source=hp&biw=1280&bih=899&q="+si+"&oq="+si)
-					soup=BeautifulSoup(img)
-					result=soup.findAll('img')
+		try:
+			br=mechanize.Browser()
+			br.set_handle_robots(False)
+			br.addheaders=[('User-Agent','Mozilla')]
+			img=br.open("https://www.google.com/search?site=&tbm=isch&source=hp&biw=1280&bih=899&q="+si+"&oq="+si)
+			soup=BeautifulSoup(img)
+			result=soup.findAll('img')
 
-					for i in result:
-							print i["src"]
+			for i in result:
+					print i["src"]
 
-			except:
-					print "No result"
+		except:
+			print "No result"
 
 	pimage=raw_input("Enter the name of object \n")
 	imget(pimage)
